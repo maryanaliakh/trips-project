@@ -1,0 +1,98 @@
+.footer {
+    background-color: #002d72;
+    color:  white;
+    padding: 40px 20px 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-description {
+    color: white;
+    font-size: 15px;
+    line-height: 1.6;
+    padding-bottom: 60px;
+}
+
+.footer-middle h3,
+.footer-right h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.footer-middle ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-middle ul li {
+    background: none;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.footer-middle ul li a {
+    display: inline-block;
+    color: white;
+    background: transparent !important;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.footer-right p {
+    margin: 6px 0;
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid white;
+}
+
+.footer-bottom p {
+    color: white;
+    font-size: 15px;
+}
+
+.logoFooter{
+    width: 50px;
+    heigth: 50px;
+}
+
+.header__title_footer{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.footer-middle ul li:hover {
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+    background: transparent !important;
+    box-shadow: none;
+}

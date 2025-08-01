@@ -1,0 +1,287 @@
+.reservation-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    font-family: 'Poppins', sans-serif;
+    padding: 100px;
+    letter-spacing: 1px;
+}
+
+.reservation-left, .reservation-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+}
+
+.reservation-left {
+    justify-content: flex-start;
+}
+
+.reservation-right {
+    flex: 0 0 280px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-family: 'Poppins', sans-serif;
+    color: #221347;
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+    min-width: 280px;
+    max-width: 280px;
+}
+
+.h2 {
+    font-size: 26px;
+    color: #221347;
+    margin-bottom: 12px;
+}
+
+.label {
+    font-weight: 500;
+    margin-top: 12px;
+    text-align: left;
+    display: block;
+}
+
+.rezerwacja-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.form-row label {
+    width: 120px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background-color: #f9fafb;
+}
+
+
+.required {
+    color: red;
+    margin-left: 4px;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 15px;
+    margin-top: 4px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 95%;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.registration-btn {
+    padding: 12px 32px;
+    background-color: #221347;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-top: 24px;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.registration-btn:hover:not(:disabled) {
+    background-color: #3b2f5a;
+}
+
+.registration-btn:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.right-content p {
+    font-size: 16px;
+    color: #444;
+    margin-top: 8px;
+}
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .reservation-wrapper {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .reservation-left,
+    .reservation-right {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .registration-btn {
+        width: 100%;
+        align-self: stretch;
+    }
+}
+
+.payment-details {
+    margin-top: 2rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.card-number-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-icons img {
+    height: 24px;
+    width: auto;
+    margin-right: 8px;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.card-icons img:hover {
+    opacity: 1;
+}
+
+.payment-details label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.payment-details input {
+    width: 96%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background-color: #f9fafb;
+}
+
+.passenger-details input {
+    width: 96%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background-color: #f9fafb;
+}
+
+.passenger-details {
+    margin-top: 2rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.passenger-details .form-row input {
+    flex: 1;
+}
+
+.highlight-box {
+    background-color: #002d72;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.total-price {
+    background-color: #002d72;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.rezerwacja-container {
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    color: black;
+    padding: 40px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    margin-left: 220px;
+}
+
+.rezerwacja-header {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+    color: #333;
+    font-weight: 600;
+}
+
+.rezerwacja-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 28px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    user-select: none;
+}
+
+.rezerwacja-button:hover {
+    background-color: #0056b3;
+}

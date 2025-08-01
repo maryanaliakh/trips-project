@@ -1,0 +1,49 @@
+.rezerwacje-container {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rezerwacje-container h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+.rezerwacje-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rezerwacja-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 16px 24px;
+    margin-bottom: 16px;
+    transition: box-shadow 0.3s ease;
+}
+
+.rezerwacja-card:hover {
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+.rezerwacja-card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #2c3e50;
+}
+
+.rezerwacja-card p {
+    margin: 6px 0;
+    color: #555;
+    font-size: 15px;
+}
+
+.rezerwacje-container p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+}

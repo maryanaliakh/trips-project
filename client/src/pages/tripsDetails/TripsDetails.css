@@ -1,0 +1,50 @@
+.wycieczki-details {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.wycieczka-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wycieczka-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.wycieczka-card h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.wycieczka-card p {
+    margin: 0.4rem 0;
+    font-size: 1rem;
+    color: #444;
+}
+
+.wycieczki-details h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #1d3557;
+}
+
+.wycieczki-details a {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.wycieczki-details a:hover {
+    text-decoration: underline;
+}

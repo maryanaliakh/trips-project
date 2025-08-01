@@ -1,0 +1,43 @@
+.contacts {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px 30px;
+    background-color: #f0f4ff;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    color: #002d72;
+    box-shadow: 0 4px 12px rgba(0, 45, 114, 0.15);
+}
+
+.contacts h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.contacts p {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+.contacts a {
+    color: #002d72;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.contacts a:hover {
+    color: #0050e6;
+    text-decoration: underline;
+}
+
+.map-container {
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 45, 114, 0.25);
+    height: 350px;
+}

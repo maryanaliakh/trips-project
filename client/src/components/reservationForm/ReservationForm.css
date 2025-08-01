@@ -1,0 +1,134 @@
+.reservation-section {
+    position: relative;
+    background: url('../../assets/image/backgroud.svg') center/cover no-repeat;
+    padding: 200px 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.reservation-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.reservation-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.reservation-form {
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: black;
+}
+
+.input-field {
+    padding: 12px 18px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    min-width: 200px;
+    transition: box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+.dropdown {
+    position: relative;
+    padding: 12px 18px;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    cursor: pointer;
+    min-width: 200px;
+    user-select: none;
+}
+
+.dropdown-label {
+    pointer-events: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    width: 100%;
+    padding: 15px;
+    z-index: 99;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: black;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.counter button {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color:  #FFD700;
+    color: #333;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.counter button:hover {
+    transform: scale(1.1);
+}
+
+.search-button {
+    padding: 12px 30px;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-button:hover {
+    background-color: #FFC300;
+    transform: scale(1.05);
+}
